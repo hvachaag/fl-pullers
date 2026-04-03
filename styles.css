@@ -1079,16 +1079,30 @@ footer {
     #navbar .nav-links.open { display: flex; }
     .nav-links a { padding: 0.65rem 0.75rem; font-size: 0.85rem; }
     .nav-links .nav-cta { margin-left: 0; }
+
+    /* Hero */
+    #home { padding: 2rem 1.25rem; }
     .hero-inner {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
         text-align: center;
     }
     .hero-logo { display: flex; justify-content: center; }
+    .hero-logo img { width: clamp(100px, 28vw, 160px); }
     .hero-desc { margin-left: auto; margin-right: auto; }
     .hero-btns { justify-content: center; }
+    .hero-card { padding: 1rem; }
     #home::after { display: none; }
-    .hc-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* Stats — flex so all 5 stay in one row, equal width */
+    .hc-grid {
+        display: flex;
+        overflow: visible;
+    }
+    .hc-stat { flex: 1 1 0; min-width: 0; }
+    .hc-num { font-size: 1.35rem; }
+    .hc-lbl { font-size: 0.56rem; letter-spacing: 0.06em; line-height: 1.3; }
+
     .about-layout, .sp-wrap, .vendor-layout { grid-template-columns: 1fr; gap: 2.5rem; }
     .sp-wrap { padding: 4rem 0; }
     .schedule-table thead { display: none; }
@@ -1104,14 +1118,17 @@ footer {
         color: var(--text-light); min-width: 68px;
     }
 }
-@media (max-width: 560px) {
-    .section { padding: 2.25rem 1rem; }
-    #home { padding: 2rem 1rem; }
+@media (max-width: 480px) {
+    .section { padding: 2rem 1rem; }
+    #home { padding: 1.5rem 1rem; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     .about-chips, .classes-grid { grid-template-columns: 1fr 1fr; }
     .topbar-left a { display: none; }
-    .hc-grid { grid-template-columns: repeat(2, 1fr); }
-    .hc-num { font-size: 1.5rem; }
+    /* Stats — further reduce on small phones */
+    .hc-num { font-size: 1.05rem; }
+    .hc-lbl { font-size: 0.48rem; letter-spacing: 0.04em; }
+    .hc-stat { padding: .65rem .2rem; }
+    /* Carousel */
     .evtc-wrap { gap: 0; }
     .evtc-arrow { display: none; }
     .evtc-slide { padding: .65rem .75rem; gap: .6rem; flex-direction: column; }
