@@ -1,0 +1,6 @@
+# PHP admin panel — not for GitHub Pages
+admin/
+
+# OS files
+.DS_Store
+Thumbs.db

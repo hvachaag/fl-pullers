@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FL Pullers — Florida Antique Tractor Club | Zellwood, FL</title>
+    <meta name="description" content="FL Pullers — Florida's premier truck and tractor pulling organization. Antique tractors, garden tractors, mini rods, trucks and smokers. Zellwood, Florida.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics: paste your GA4 <script> tag here once you have a Measurement ID from analytics.google.com -->
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <div class="topbar-left">
+        <span><i class="fas fa-map-marker-alt"></i>&nbsp; Zellwood, Florida</span>
+        <a href="https://www.facebook.com/FLPULLERS" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i>&nbsp; Follow us on Facebook</a>
+    </div>
+    <div class="topbar-right">
+        <a href="tel:3524550236"><i class="fas fa-phone"></i>&nbsp; (352) 455-0236</a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+    <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><img src="images/flLogo.png" alt="FL Pullers Logo"></div>
+        <div>
+            <div class="nav-logo-text">FL PULLERS</div>
+        </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="superpull.html">Super Pull</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="vendors.html">Vendors</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+    <div class="hero-inner">
+        <div>
+            <div class="hero-logo">
+                <img src="images/flLogo.png" alt="FL Pullers — Florida Antique Tractor Club">
+            </div>
+            <p class="hero-desc">
+                Central Florida's home for world-class truck and tractor pulling.
+                From pedal tractors to open-class fire-breathers — at our premier
+                400-foot, three-lane track in Zellwood, FL.
+            </p>
+            <div class="hero-btns">
+                <a href="schedule.html" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> 2026 Schedule</a>
+                <a href="about.html" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="hero-card">
+                <div class="hc-label">Club at a Glance</div>
+                <div class="hc-grid">
+                    <div class="hc-stat"><div class="hc-num">50+</div><div class="hc-lbl">Years of Pulling</div></div>
+                    <div class="hc-stat"><div class="hc-num">75+</div><div class="hc-lbl">Club Members</div></div>
+                    <div class="hc-stat"><div class="hc-num">400ft</div><div class="hc-lbl">Track Length</div></div>
+                    <div class="hc-stat"><div class="hc-num">3</div><div class="hc-lbl">Lane Wide Track</div></div>
+                    <div class="hc-stat"><div class="hc-num">7+</div><div class="hc-lbl">Events / Year</div></div>
+                </div>
+                <div class="hc-next">
+                    <div class="hc-next-ico"><i class="fas fa-calendar-check"></i></div>
+                    <div>
+                        <div class="hc-next-sub">Next Upcoming Event</div>
+                        <div class="hc-next-val">April 11 &mdash; Spring Pull</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE BAND — commented out for now
+<div class="quote-band">
+    <blockquote>"I'll never forget that first really big diesel headed down the track. It was so loud it was blowing ceiling tiles loose — I was hooked from that moment on."</blockquote>
+    <cite>&mdash; Stan Bainter, Co-Founder &middot; Florida Tractor Pullers Association, 1971</cite>
+</div>
+-->
+
+<!-- UPCOMING EVENTS PREVIEW -->
+<section class="section hp-events-section">
+    <div class="section-inner">
+        <div class="section-header">
+            <div class="eyebrow">2026 Season</div>
+            <h2 class="section-title">Event Schedule</h2>
+            <p class="section-sub">Browse all 2026 events. Past events are shown dimmed — upcoming events are highlighted.</p>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="evtc-wrap">
+            <button class="evtc-arrow evtc-prev" id="evtcPrev" aria-label="Previous event">&#8592;</button>
+
+            <div class="evtc-track-outer">
+                <div class="evtc-track" id="evtcTrack">
+
+                    <!-- 1: Super Pull — PAST -->
+                    <div class="evtc-slide evtc-past">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Feb 6–7</div>
+                            <span class="badge badge-past"><i class="fas fa-check"></i> Super Pull</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-status">Completed</div>
+                            <div class="evtc-name">2026 Zellwood Super Pull</div>
+                            <div class="evtc-note">Two nights of action-packed pulling</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Antiques &amp; Garden 1:00 PM · Modified 6:00 PM (both nights)</div>
+                        </div>
+                    </div>
+
+                    <!-- 2: NTPA — PAST -->
+                    <div class="evtc-slide evtc-past">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Mar 13–14</div>
+                            <span class="badge badge-past"><i class="fas fa-check"></i> NTPA</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-status">Completed</div>
+                            <div class="evtc-name">NTPA Grand National Series</div>
+                            <div class="evtc-note">Contact Doug Borth: (612) 802-4447</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Pull starts at 6:00 PM</div>
+                        </div>
+                    </div>
+
+                    <!-- 3: April Pull — NEXT UP -->
+                    <div class="evtc-slide evtc-next">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Apr 11</div>
+                            <span class="badge badge-green">Regular</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-status evtc-status-next">Next Up</div>
+                            <div class="evtc-name">April Pull</div>
+                            <div class="evtc-note">Regular season event</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 1:00–3:00 PM · Pull 4:00 PM</div>
+                            <a href="schedule.html" class="btn btn-primary evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 4: May Pull -->
+                    <div class="evtc-slide">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">May 16</div>
+                            <span class="badge badge-green">Regular</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">May Pull</div>
+                            <div class="evtc-note">Regular season event</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 1:00–3:00 PM · Pull 4:00 PM</div>
+                            <a href="schedule.html" class="btn btn-outline evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 5: September Pull -->
+                    <div class="evtc-slide">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Sep 12</div>
+                            <span class="badge badge-green">Regular</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">September Pull</div>
+                            <div class="evtc-note">Regular season event</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 1:00–3:00 PM · Pull 4:00 PM</div>
+                            <a href="schedule.html" class="btn btn-outline evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 6: October Pull -->
+                    <div class="evtc-slide">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Oct 10</div>
+                            <span class="badge badge-green">Regular</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">October Pull</div>
+                            <div class="evtc-note">Regular season event</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 1:00–3:00 PM · Pull 4:00 PM</div>
+                            <a href="schedule.html" class="btn btn-outline evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 7: Mega Truck Pull -->
+                    <div class="evtc-slide evtc-featured">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Nov 14</div>
+                            <span class="badge badge-orange"><i class="fas fa-truck"></i> Mega Truck</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">Mega Truck Pull</div>
+                            <div class="evtc-note">Full day of mega truck action</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 9:00 AM–12:00 PM · Pull 1:00 PM</div>
+                            <a href="schedule.html" class="btn btn-primary evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 8: December Finale -->
+                    <div class="evtc-slide">
+                        <div class="evtc-col-l">
+                            <div class="evtc-date">Dec 5</div>
+                            <span class="badge badge-green">Finale</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">December Pull — Season Finale</div>
+                            <div class="evtc-note">Last regular event of the 2026 season</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Reg. 1:00–3:00 PM · Pull 4:00 PM</div>
+                            <a href="schedule.html" class="btn btn-outline evtc-btn">Full Schedule <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- 9: 2027 Super Pull -->
+                    <div class="evtc-slide evtc-featured">
+                        <div class="evtc-col-l">
+                            <div class="evtc-status" style="font-size:.65rem;color:var(--orange);font-weight:700;letter-spacing:.1em;text-transform:uppercase;">2027</div>
+                            <div class="evtc-date" style="color:var(--orange);">Feb 5–6</div>
+                            <span class="badge badge-orange"><i class="fas fa-star"></i> Super Pull</span>
+                        </div>
+                        <div class="evtc-col-r">
+                            <div class="evtc-name">2027 Zellwood Super Pull</div>
+                            <div class="evtc-note">Two nights of premier truck &amp; tractor pulling action</div>
+                            <div class="evtc-time"><i class="fas fa-clock"></i> Antiques &amp; Garden 1:00 PM · Modified 6:00 PM (both nights)</div>
+                            <a href="superpull.html" class="btn btn-primary evtc-btn">Event Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="evtc-arrow evtc-next" id="evtcNext" aria-label="Next event">&#8594;</button>
+        </div>
+
+        <!-- Dots -->
+        <div class="evtc-dots" id="evtcDots"></div>
+
+        <div class="hp-events-footer" style="margin-top:1.5rem;">
+            <a href="schedule.html" class="btn btn-outline"><i class="fas fa-calendar-alt"></i> View Full 2026 Schedule</a>
+            <span class="hp-fb-note"><i class="fab fa-facebook-square"></i> Follow <a href="https://www.facebook.com/FLPULLERS" target="_blank" rel="noopener">FL Pullers on Facebook</a> for real-time updates</span>
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var track  = document.getElementById('evtcTrack');
+    var slides = track.querySelectorAll('.evtc-slide');
+    var dotsEl = document.getElementById('evtcDots');
+    var prevBtn = document.getElementById('evtcPrev');
+    var nextBtn = document.getElementById('evtcNext');
+    var current = 2; // start on "Next Up" (Apr 11, index 2)
+    var total   = slides.length;
+
+    // Build dots
+    for (var i = 0; i < total; i++) {
+        var d = document.createElement('button');
+        d.className = 'evtc-dot';
+        d.setAttribute('aria-label', 'Event ' + (i + 1));
+        d.addEventListener('click', (function(idx){ return function(){ goTo(idx); }; })(i));
+        dotsEl.appendChild(d);
+    }
+
+    function goTo(idx) {
+        current = (idx + total) % total;
+        track.style.transform = 'translateX(-' + (current * 100) + '%)';
+        dotsEl.querySelectorAll('.evtc-dot').forEach(function(d, i) {
+            d.classList.toggle('active', i === current);
+        });
+        prevBtn.disabled = false;
+        nextBtn.disabled = false;
+    }
+
+    prevBtn.addEventListener('click', function () { goTo(current - 1); });
+    nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft')  goTo(current - 1);
+        if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+
+    // Touch / swipe
+    var startX = null;
+    track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+    track.addEventListener('touchend', function(e){
+        if (startX === null) return;
+        var diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+        startX = null;
+    });
+
+    goTo(current);
+}());
+</script>
+<footer>
+    <div class="footer-grid">
+        <div>
+            <div class="footer-logo">
+                <div class="footer-logo-icon"><img src="images/flLogo.png" alt="FL Pullers Logo"></div>
+                <div>
+                    <div class="footer-logo-text">FL PULLERS</div>
+                </div>
+            </div>
+            <p class="footer-brand-text">The Florida Antique Tractor Club, Inc. — a not-for-profit organization proudly serving Florida's truck and tractor pulling community since 1994. Home of the premier pulling facility in the Sunshine State.</p>
+            <div class="socials">
+                <a href="https://www.facebook.com/FLPULLERS" target="_blank" rel="noopener" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.flpullers.com" target="_blank" rel="noopener" class="social-btn" title="Official Website"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="schedule.html">2026 Schedule</a></li>
+                <li><a href="classes.html">Pulling Classes</a></li>
+                <li><a href="superpull.html">Super Pull</a></li>
+                <li><a href="rules.html">Rules &amp; Regs</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <ul class="footer-list">
+                <li><a href="https://www.flpullers.com/puller-info/" target="_blank" rel="noopener">Puller Info</a></li>
+                <li><a href="https://www.flpullers.com/vendor-info/" target="_blank" rel="noopener">Vendor Info</a></li>
+                <li><a href="https://www.flpullers.com/pictures-and-videos/" target="_blank" rel="noopener">Photos &amp; Videos</a></li>
+                <li><a href="https://www.flpullers.com/our-history/" target="_blank" rel="noopener">Our History</a></li>
+                <li><a href="contact.html">Contact Officers</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Location</h4>
+            <p class="footer-addr">Zellwood Sweet Corn<br>Festival Facility<br>Zellwood, Florida<br><br><span style="color:rgba(255,255,255,.3);font-size:.78rem;">Follow us on Facebook for the latest event updates and announcements.</span></p>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <p>&copy; 2026 Florida Antique Tractor Club, Inc. &nbsp;&middot;&nbsp; <a href="https://www.flpullers.com" target="_blank" rel="noopener">flpullers.com</a></p>
+        <div class="footer-built-by">Website by&nbsp;<a href="https://georgiamotorsportsmedia.com" target="_blank" rel="noopener"><img src="images/gmm.png" alt="Georgia Motorsports Media"> Georgia Motorsports Media</a></div>
+        <a href="#" class="back-top">Back to top &uarr;</a>
+    </div>
+</footer>
+
+<script>
+    const navbar    = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    function toggleNav() {
+        const open = navLinks.classList.toggle('open');
+        hamburger.classList.toggle('open', open);
+        hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    }
+
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('elevated', window.scrollY > 10);
+    });
+</script>
+</body>
+</html>
+
+
+
