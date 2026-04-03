@@ -1079,8 +1079,16 @@ footer {
     #navbar .nav-links.open { display: flex; }
     .nav-links a { padding: 0.65rem 0.75rem; font-size: 0.85rem; }
     .nav-links .nav-cta { margin-left: 0; }
-    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .hero-logo { display: flex; justify-content: center; }
+    .hero-desc { margin-left: auto; margin-right: auto; }
+    .hero-btns { justify-content: center; }
     #home::after { display: none; }
+    .hc-grid { grid-template-columns: repeat(3, 1fr); }
     .about-layout, .sp-wrap, .vendor-layout { grid-template-columns: 1fr; gap: 2.5rem; }
     .sp-wrap { padding: 4rem 0; }
     .schedule-table thead { display: none; }
@@ -1097,8 +1105,28 @@ footer {
     }
 }
 @media (max-width: 560px) {
-    .section { padding: 4rem 1.25rem; }
+    .section { padding: 2.25rem 1rem; }
+    #home { padding: 2rem 1rem; }
     .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
     .about-chips, .classes-grid { grid-template-columns: 1fr 1fr; }
     .topbar-left a { display: none; }
+    .hc-grid { grid-template-columns: repeat(2, 1fr); }
+    .hc-num { font-size: 1.5rem; }
+    .evtc-wrap { gap: 0; }
+    .evtc-arrow { display: none; }
+    .evtc-slide { padding: .65rem .75rem; gap: .6rem; flex-direction: column; }
+    .evtc-col-l {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding-right: 0;
+        padding-bottom: .5rem;
+        min-width: unset;
+        gap: .6rem;
+    }
+    .evtc-col-l .evtc-date { font-size: 1.1rem; }
+    .evtc-dots { gap: .55rem; margin-bottom: .75rem; }
+    .evtc-dot  { width: 10px; height: 10px; }
 }
